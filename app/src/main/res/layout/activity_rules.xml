@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    tools:context=".rules">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset"
+    >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        >
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="500dp"
+        android:layout_height="88dp"
+        android:layout_x="-86dp"
+        android:layout_y="20dp"
+        app:srcCompat="@drawable/rules"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-54dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="310dp"
+        android:layout_height="352dp"
+        android:layout_x="33dp"
+        android:layout_y="143dp"
+        android:text="1.Green square is the snake.\n2.Blue square is the food.\n3.Move the snake right,left,up,down by swipping the screen.\n4.The snake grows as it eat food and score increases one per food.\n5.If the snake touch the boundary or it's own body it again starts from the initial stage."
+        android:textColor="#64F016"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="111dp"
+        android:layout_height="70dp"
+        android:layout_x="131dp"
+        android:layout_y="475dp"
+        android:autoText="true"
+        android:background="@drawable/button"
+
+
+        android:text="BACK"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="610dp" />
+
+    </TableLayout>
+
+    </ScrollView>
+</AbsoluteLayout>
